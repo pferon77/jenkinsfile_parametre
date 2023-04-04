@@ -10,19 +10,6 @@ pipeline {
         choice(name: 'SEX', choices: ['MALE','FEMALE'], description: 'Choose your sex')
     }
     stages {
-        stage('Printing Parameters') {
-            steps {
-                echo "Hello ${params.NAME}"
-
-                echo "Job Details: ${params.DESC}"
-
-                echo "Skip Running Test case ?: ${params.SKIP_TEST}"
-
-                echo "Branch Choice: ${params.BRANCH}"
-
-                echo "SONAR Password: ${params.SONAR_SERVER_PWD}"
-            }
-        }
     stage('build') {
       steps {
         script {
