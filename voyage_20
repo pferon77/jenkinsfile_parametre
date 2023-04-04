@@ -9,7 +9,7 @@ pipeline {
 
         choice(name: 'BRANCH', choices: ['Master', 'Dev'], description: 'Choose branch')
 
-        password(name: 'SONAR_SERVER_PWD', description: 'Enter SONAR password')
+      
     }
     stages {
         stage('Printing Parameters') {
