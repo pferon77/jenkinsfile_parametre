@@ -1,0 +1,56 @@
+pipeline {
+    agent any
+    parameters {
+        string(name: 'NAME', description: 'Please tell me your name?')
+
+        text(name: 'DESC', description: 'Describe about the job details')
+
+        booleanParam(name: 'SKIP_TEST', description: 'Want to skip running Test cases?')
+
+        choice(name: 'BRANCH', choices: ['Master', 'Dev'], description: 'Choose branch')
+
+        password(name: 'SONAR_SERVER_PWD', description: 'Enter SONAR password')
+    }
+    stages {
+        stage('Printing Parameters') {
+            steps {
+                echo "Hello ${params.NAME}"
+
+                echo "Job Details: ${params.DESC}"
+
+                echo "Skip Running Test case ?: ${params.SKIP_TEST}"
+
+                echo "Branch Choice: ${params.BRANCH}"
+
+                echo "SONAR Password: ${params.SONAR_SERVER_PWD}"
+            }
+        }
+    stage('build') {
+      steps {
+        script {
+          echo "Checking de la coque"
+          sleep 10
+          echo "Integrité de la coque à 100%"
+        }
+      }
+    }
+        stage('Test') {
+      steps {
+        script {
+          echo "Verification des équipement de navigation"
+          sleep 10
+          echo "Léger disfonctionnement de la carte numerique" 
+        }
+      }
+    }
+        stage('Deploy') {
+      steps {
+        script {
+          echo "Verification des equipements de communication"
+          sleep 10
+          echo "Test radio ok. "    
+        }
+      }
+    }
+    }
+}
