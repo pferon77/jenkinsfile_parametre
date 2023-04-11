@@ -1,7 +1,54 @@
+# Déclarations des étapes de construction du Pipeline
 pipeline {
-  agent any 
-  parameters { 
-    string(name: 'NOM', description: 'Veuillez indiquer votre nom')
-    string(name: 'PRÉNOM', description: 'Veuillez indiquer votre prénom')
-    password(name: 'Pwd_Serveur', description: 'Entrez votre mot de passe')
+    agent any
+    parameters { 
+        string(name: 'PRENOM', description: 'Veuillez indiquer votre prénom')
+        string(name: 'NOM', description: 'Veuillez indiquer votre nom')
+        password(name: 'SONAR_SERVER_PWD', description: 'Entrer votre mot de passe SONAR')
+        choice(name: 'MOIS', choices: ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet','Aout', 'Septembre', 'Octobre','Novembre', 'Decembre'], description: 'Choisissez le mois')
+        choice(name: 'DATE_DU_JOUR', choices: ['1', '2', '3', '4', '5', '6', '7','8', '9', '10','11', '12','13', '14', '15', '16', '17', '18', '19','20', '21', '22','23', '24','25','26','27','28','29','30','31'], description: 'Quel est la date du jour ?')
+        string(name: 'CHALLENGES', choices: ["Janvier | Rédiger un journal intime", "Février | Redécorer la maison pour me sentir bien", "Mars | Prendre soin de soi", "Avril | Soyez gentil", "Mai | Faites quelque chose que vous n'avez jamais fait auparavant", "Juin | Passez du temps avec le vôtre", "Juillet | Aller à un concert et danser", "Août | Dormir une nuit sur la plage", "Septembre | Découvrez le monde", "Octobre | Étudiez", "Novembre | Apprendre à jouer d'un instrument", "Décembre | Respirez consciencieusement"]
+    }
+    stages {
+        stage ('Formulaire') {
+            steps {
+                script {
+                    def prenom = "${param.PRENOM}"
+                    def nom = "${param.NOM}"
+                    def mdp = "${param.SONAR_SERVER_PWD}"
+
+                    echo "Bonjour $prenom, Bienvenue sur notre réalisateur de souhaits !"
+                    sleep 15
+                }
+            }
+        }
+    Stage ('Janvier') {
+        steps {
+            script {
+                def challenges = "${params.CHALLENGES}"
+                def today = "${param.DATE_DU_JOUR}"
+                def mois = "${param.MOIS}"
+
+                if (mois == "Janvier" && today == '1') {
+                    challenges = "Rédiger un journal intime"
+                    echo "Nous voilà en $mois"
+                    echo "Un petit apercu des challenges disponibles : $challenges"
+                    sleep 15
+                }
+                else if (mois == "Janvier" && today <= '20') {
+                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
+                    sleep 15
+                }
+                else if (mois == "Janvier" && today == '31') {
+                    echo "Félicitations, vous avez atteint la fin du 1er mois!"
+                }
+            }
+        }
+    }
     
+    
+    
+    
+    
+    
+    }
