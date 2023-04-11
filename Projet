@@ -1,0 +1,7 @@
+pipeline {
+  agent any 
+  parameters { 
+    string(name: 'NOM', description: 'Veuillez indiquer votre nom')
+    string(name: 'PRÉNOM', description: 'Veuillez indiquer votre prénom')
+    password(name: 'Pwd_Serveur', description: 'Entrez votre mot de passe')
+    
