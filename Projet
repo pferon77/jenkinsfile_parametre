@@ -27,7 +27,7 @@ pipeline {
                 def mois = "${param.MOIS}"
 
                 if (mois == "Janvier" && today == '1') {
-                    challenges = "Rédiger un journal intime"
+                    challenges = "Rediger un journal intime"
                     echo "Nous voila en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
                     sleep 15
@@ -43,24 +43,24 @@ pipeline {
         }
     }
     
-    stage ('Février') {
+    stage ('Fevrier') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
                 def today = "${param.DATE_DU_JOUR}"
                 def mois = "${param.MOIS}"
 
-                if (mois == "Février" && today == '1') {
-                    challenges = "Redécorer la maison pour me sentir bien"
+                if (mois == "Fevrier" && today == '1') {
+                    challenges = "Redecorer la maison pour me sentir bien"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
                     sleep 15
                 }
-                else if (mois == "Février" && today <= '20') {
+                else if (mois == "Fevrier" && today <= '20') {
                     echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
                     sleep 15
                 }
-                else if (mois == "Février" && today == '28') {
+                else if (mois == "Fevrier" && today == '28') {
                     echo "Déjà 2 mois, ne lachez rien !"
                 }
             }
@@ -187,24 +187,24 @@ pipeline {
         }
     }
    
-    stage ('Août') {
+    stage ('Aout') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
                 def today = "${param.DATE_DU_JOUR}"
                 def mois = "${param.MOIS}"
 
-                if (mois == "Août" && today == '1') {
+                if (mois == "Aout" && today == '1') {
                     challenges = "Dormir une nuit sur la plage"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
                     sleep 15
                 }
-                else if (mois == "Août" && today <= '20') {
+                else if (mois == "Aout" && today <= '20') {
                     echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
                     sleep 15
                 }
-                else if (mois == "Août" && today == '31') {
+                else if (mois == "Aout" && today == '31') {
                     echo "Après tous ces succès vous êtes pret pour la rentrée, fécilitation et bon courage"
                 }
             }
@@ -283,24 +283,24 @@ pipeline {
         }
     }
    
-    stage ('Décembre') {
+    stage ('Decembre') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
                 def today = "${param.DATE_DU_JOUR}"
                 def mois = "${param.MOIS}"
 
-                if (mois == "Décembre" && today == '1') {
+                if (mois == "Decembre" && today == '1') {
                     challenges = "Respirez consciencieusement"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
                     sleep 15
                 }
-                else if (mois == "Décembre" && today <= '20') {
+                else if (mois == "Decembre" && today <= '20') {
                     echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
                     sleep 15
                 }
-                else if (mois == "Décembre" && today == '30') {
+                else if (mois == "Decembre" && today == '30') {
                     echo "Toutes nos fécilications pour cette année, nous vous souhaitant le meilleur pour la suivante"
                 }
             }
