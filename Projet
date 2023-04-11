@@ -13,7 +13,6 @@ pipeline {
                 script {
                     def prenom = "${param.PRENOM}"
                     def nom = "${param.NOM}"
-                    def mdp = "${param.SONAR_SERVER_PWD}"
 
                     echo "Bonjour $prenom, Bienvenue sur notre realisateur de souhaits !"
                     sleep 15
