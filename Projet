@@ -1,4 +1,3 @@
-# Déclarations des étapes de construction du Pipeline
 pipeline {
     agent any
     parameters { 
