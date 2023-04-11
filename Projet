@@ -21,7 +21,7 @@ pipeline {
                 }
             }
         }
-    Stage ('Janvier') {
+    stage ('Janvier') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -45,7 +45,7 @@ pipeline {
         }
     }
     
-    Stage ('Février') {
+    stage ('Février') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -69,7 +69,7 @@ pipeline {
         }
     }
     
-    Stage ('Mars') {
+    stage ('Mars') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -93,7 +93,7 @@ pipeline {
         }
     }
     
-    Stage ('Avril') {
+    stage ('Avril') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -117,7 +117,7 @@ pipeline {
         }
     }
     
-    Stage ('Mai') {
+    stage ('Mai') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -141,7 +141,7 @@ pipeline {
         }
     }
     
-    Stage ('Juin') {
+    stage ('Juin') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -165,7 +165,7 @@ pipeline {
         }
     }
     
-    Stage ('Juillet') {
+    stage ('Juillet') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -189,7 +189,7 @@ pipeline {
         }
     }
    
-    Stage ('Août') {
+    stage ('Août') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -213,7 +213,7 @@ pipeline {
         }
     }
    
-    Stage ('Septembre') {
+    stage ('Septembre') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -237,7 +237,7 @@ pipeline {
         }
     }
    
-    Stage ('Octobre') {
+    stage ('Octobre') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -261,7 +261,7 @@ pipeline {
         }
     }
    
-    Stage ('Novembre') {
+    stage ('Novembre') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -285,7 +285,7 @@ pipeline {
         }
     }
    
-    Stage ('Décembre') {
+    stage ('Décembre') {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
@@ -309,5 +309,5 @@ pipeline {
         }
     }
    
- }
+  }
 }
