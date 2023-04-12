@@ -11,8 +11,8 @@ pipeline {
         stage ('Formulaire') {
             steps {
                 script {
-                    def prenom = "${param.PRENOM}"
-                    def nom = "${param.NOM}"
+                    def prenom = "${params.PRENOM}"
+                    def nom = "${params.NOM}"
 
                     echo "Bonjour $prenom, Bienvenue sur notre realisateur de souhaits !"
                     sleep 15
