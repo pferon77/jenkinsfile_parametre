@@ -32,10 +32,6 @@ pipeline {
                     echo "Un petit apercu des challenges disponibles : $challenges"
                     sleep 5
                 }
-                else if (mois == "Janvier" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 5
-                }
                 else if (mois == "Janvier" && today == '31') {
                     echo "Félicitations, vous avez atteint la fin du 1er mois!"
                 }
@@ -54,11 +50,7 @@ pipeline {
                     challenges = "Redecorer la maison pour me sentir bien"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Fevrier" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Fevrier" && today == '28') {
                     echo "Déjà 2 mois, ne lachez rien !"
@@ -78,11 +70,7 @@ pipeline {
                     challenges = "Prendre soin de soi"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Mars" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Mars" && today == '31') {
                     echo "3 mois, 1/4 de l'année, tenez bon"
@@ -102,11 +90,7 @@ pipeline {
                     challenges = "Soyez gentil"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Avril" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Avril" && today == '30') {
                     echo "Un tier de l'année est passée, vous vous en sortez bien"
@@ -126,11 +110,7 @@ pipeline {
                     challenges = "Faites quelque chose que vous ne connaissez pas"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Mai" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Mai" && today == '31') {
                     echo "Comme dit l'adage, en Mai faites ce qu'il vous plait"
@@ -150,11 +130,7 @@ pipeline {
                     challenges = "passez du temps avec les vôtre"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Juin" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Juin" && today == '30') {
                     echo "Continuez ainsi, vous avez tenu la moitié de l'année"
@@ -174,11 +150,7 @@ pipeline {
                     challenges = "aller à un concert et danser"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Juillet" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Juillet" && today == '31') {
                     echo "Encore un mois validé, et surtout pensez à la crème solaire"
@@ -198,11 +170,7 @@ pipeline {
                     challenges = "Dormir une nuit sur la plage"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Aout" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Aout" && today == '31') {
                     echo "Après tous ces succès vous êtes pret pour la rentrée, fécilitation et bon courage"
@@ -222,11 +190,7 @@ pipeline {
                     challenges = "Découvrez le monde"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Septembre" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Septembre" && today == '30') {
                     echo "La fin de l'année approche, ne lachez rien et continuez à réaliser vos objectifs"
@@ -246,11 +210,7 @@ pipeline {
                     challenges = "Étudiez"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Octobre" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Octobre" && today == '31') {
                     echo "Les 3/4 de l'année sont passés, votre volontée est décidemment à toute épreuve"
@@ -270,11 +230,7 @@ pipeline {
                     challenges = "Apprendre à jouer d'un instrument"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Novembre" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Novembre" && today == '30') {
                     echo "Bravo, vous avez atteint vos objectifs"
@@ -294,11 +250,7 @@ pipeline {
                     challenges = "Respirez consciencieusement"
                     echo "Nous voilà en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
-                }
-                else if (mois == "Decembre" && today <= '20') {
-                    echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Decembre" && today == '30') {
                     echo "Toutes nos fécilications pour cette année, nous vous souhaitant le meilleur pour la suivante"
