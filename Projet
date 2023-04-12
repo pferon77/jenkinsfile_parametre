@@ -15,7 +15,7 @@ pipeline {
                     def nom = "${params.NOM}"
 
                     echo "Bonjour $prenom, Bienvenue sur notre realisateur de souhaits !"
-                    sleep 15
+                    sleep 5
                 }
             }
         }
@@ -23,18 +23,18 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Janvier" && today == '1') {
                     challenges = "Rediger un journal intime"
                     echo "Nous voila en $mois"
                     echo "Un petit apercu des challenges disponibles : $challenges"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Janvier" && today <= '20') {
                     echo "Aujourd'hui est déjà le $today du mois, vos challenges expirent prochainement"
-                    sleep 15
+                    sleep 5
                 }
                 else if (mois == "Janvier" && today == '31') {
                     echo "Félicitations, vous avez atteint la fin du 1er mois!"
@@ -47,8 +47,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Fevrier" && today == '1') {
                     challenges = "Redecorer la maison pour me sentir bien"
@@ -71,8 +71,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Mars" && today == '1') {
                     challenges = "Prendre soin de soi"
@@ -95,8 +95,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Avril" && today == '1') {
                     challenges = "Soyez gentil"
@@ -119,8 +119,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Mai" && today == '1') {
                     challenges = "Faites quelque chose que vous ne connaissez pas"
@@ -143,8 +143,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Juin" && today == '1') {
                     challenges = "passez du temps avec les vôtre"
@@ -167,8 +167,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Juillet" && today == '1') {
                     challenges = "aller à un concert et danser"
@@ -191,8 +191,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Aout" && today == '1') {
                     challenges = "Dormir une nuit sur la plage"
@@ -215,8 +215,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Septembre" && today == '1') {
                     challenges = "Découvrez le monde"
@@ -239,8 +239,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Octobre" && today == '1') {
                     challenges = "Étudiez"
@@ -263,8 +263,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Novembre" && today == '1') {
                     challenges = "Apprendre à jouer d'un instrument"
@@ -287,8 +287,8 @@ pipeline {
         steps {
             script {
                 def challenges = "${params.CHALLENGES}"
-                def today = "${param.DATE_DU_JOUR}"
-                def mois = "${param.MOIS}"
+                def today = "${params.DATE_DU_JOUR}"
+                def mois = "${params.MOIS}"
 
                 if (mois == "Decembre" && today == '1') {
                     challenges = "Respirez consciencieusement"
